@@ -1,0 +1,86 @@
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: var(--color-bg);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-text) 16%, transparent);
+}
+
+/* 섹션 사이 회색 구분띠 */
+.section--divided {
+  border-top: 8px solid var(--color-bg-footer);
+}
+
+/* PC 바깥 영역: 초록 띠 + 왼쪽 일러스트 */
+.site-bar,
+.side-banner {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  /* 양옆 배경: 위는 아주 연한 연두 → 아래로 연한 녹색 */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      color-mix(in srgb, var(--color-logo) 8%, var(--color-bg)),
+      color-mix(in srgb, var(--color-secondary) 24%, var(--color-bg))
+    );
+  }
+
+  /* 쇼핑몰 화면의 올리브 띠와 같은 줄에 깔리도록 */
+  .site-bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 40px;
+    /* 문구 시작을 왼쪽 배너의 왼쪽 끝에 맞춤 (좁은 화면에서는 16px) */
+    padding-left: max(16px, calc(50% - 250px - 40px - 400px));
+    line-height: 40px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--color-bg);
+    background: var(--color-secondary);
+  }
+}
+
+@media (min-width: 1280px) {
+  .side-banner {
+    display: block;
+    position: fixed;
+    top: 80px;
+    /* 가운데 500px 화면 왼쪽에서 40px 떨어지게 (오른쪽 버튼과 대칭) */
+    right: calc(50% + 250px + 40px);
+    /* 좁은 화면에서는 왼쪽 끝 16px 여백을 남기고 줄어듦 */
+    width: min(400px, calc((100vw - 500px) / 2 - 56px));
+    animation: side-banner-float 4s ease-in-out infinite alternate;
+  }
+
+  .side-banner img {
+    width: 100%;
+  }
+}
+
+/* 위아래로 천천히 둥둥 */
+@keyframes side-banner-float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .side-banner {
+    animation: none;
+  }
+}

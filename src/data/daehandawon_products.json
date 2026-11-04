@@ -1,0 +1,1038 @@
+{
+  "meta": {
+    "brand": "대한다원",
+    "dataType": "sample",
+    "notice": "포트폴리오 시안용 샘플 데이터입니다. 가격, 평점, 후기, 배송 정보는 실제 판매 정보가 아닙니다.",
+    "currency": "KRW"
+  },
+  "products": [
+    {
+      "id": "DH-001",
+      "category": "음료·베이스",
+      "image": "images/product-01.jpg",
+      "alt": "녹차라떼 스틱 16개입 상자",
+      "description": "달콤하고 부드러운 한 잔이 필요한 오후라면, 뜨거운 물만 부어 간편하게 즐겨보세요.",
+      "title": "녹차라떼 스틱 16개입",
+      "discountRate": 22,
+      "originalPrice": 9000,
+      "salePrice": 7000,
+      "hashtags": [
+        "#녹차라떼",
+        "#간편음료",
+        "#오후의한잔"
+      ],
+      "badge": "BEST",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "208g (13g × 16개입)",
+      "origin": "국내산",
+      "rating": 4.8,
+      "reviewCount": 214,
+      "reviews": [
+        {
+          "author": "김**",
+          "rating": 5,
+          "content": "단맛이 과하지 않아 매일 오후에 한 잔씩 마셔요.",
+          "date": "2026-10-17"
+        },
+        {
+          "author": "이**",
+          "rating": 4,
+          "content": "스틱 하나로 금방 타져서 사무실에 두기 좋아요.",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "DH-002",
+      "category": "가루녹차·말차",
+      "image": "images/product-02.jpg",
+      "alt": "잎 그림이 그려진 가루녹차 지퍼 파우치",
+      "description": "라떼도 베이킹도 집에서 직접 만들고 싶다면, 활용도 높은 가루녹차로 시작해보세요.",
+      "title": "보성 가루녹차 파우치",
+      "discountRate": 20,
+      "originalPrice": 25000,
+      "salePrice": 20000,
+      "hashtags": [
+        "#가루녹차",
+        "#홈카페",
+        "#녹차베이킹"
+      ],
+      "badge": "BEST",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "50g",
+      "origin": "전남 보성",
+      "rating": 4.9,
+      "reviewCount": 186,
+      "reviews": [
+        {
+          "author": "박**",
+          "rating": 5,
+          "content": "향이 진하고 색이 고와서 라떼 만들 때 잘 쓰고 있어요.",
+          "date": "2026-10-09"
+        },
+        {
+          "author": "최**",
+          "rating": 5,
+          "content": "지퍼 파우치라 보관하기 편해요.",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "DH-003",
+      "category": "선물세트·다구",
+      "image": "images/product-03.jpg",
+      "alt": "차통 2개와 연녹색 선물 상자",
+      "description": "소중한 분께 봄의 첫 찻잎을 전하고 싶다면, 정갈한 첫물차 선물세트를 건네보세요.",
+      "title": "처음딴차 선물세트",
+      "discountRate": 10,
+      "originalPrice": 149000,
+      "salePrice": 134300,
+      "hashtags": [
+        "#첫물차",
+        "#프리미엄선물",
+        "#명절선물",
+        "#차선물"
+      ],
+      "badge": "선물추천",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 0,
+      "volume": "차통 2개입",
+      "origin": "확인 필요",
+      "rating": 4.9,
+      "reviewCount": 92,
+      "reviews": [
+        {
+          "author": "정**",
+          "rating": 5,
+          "content": "포장이 고급스러워 어른들 선물로 드렸더니 좋아하셨어요.",
+          "date": "2026-10-02"
+        },
+        {
+          "author": "강**",
+          "rating": 5,
+          "content": "향이 맑고 은은해서 귀한 차를 마시는 기분이에요.",
+          "date": "2026-09-27"
+        }
+      ]
+    },
+    {
+      "id": "DH-004",
+      "category": "잎차·티백",
+      "image": "images/product-04.jpg",
+      "alt": "찻잎이 보이는 봉로녹차 투명창 파우치",
+      "description": "찻잎 본연의 맛을 넉넉하게 즐기고 싶다면, 매일 우려 마시기 좋은 잎차를 골라보세요.",
+      "title": "봉로녹차 잎차",
+      "discountRate": 23,
+      "originalPrice": 6500,
+      "salePrice": 5000,
+      "hashtags": [
+        "#잎차",
+        "#봉로녹차",
+        "#데일리티"
+      ],
+      "badge": "가성비",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "200g",
+      "origin": "전남 보성",
+      "rating": 4.6,
+      "reviewCount": 131,
+      "reviews": [
+        {
+          "author": "조**",
+          "rating": 5,
+          "content": "양이 넉넉해서 온 가족이 오래 마셔요.",
+          "date": "2026-09-22"
+        },
+        {
+          "author": "윤**",
+          "rating": 4,
+          "content": "구수한 맛이 있어 식후에 마시기 좋아요.",
+          "date": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "id": "DH-005",
+      "category": "잎차·티백",
+      "image": "images/product-05.jpg",
+      "alt": "곡선 패턴이 그려진 처음딴차 상자",
+      "description": "차를 처음 시작하신다면, 간편한 티백으로 첫물차의 산뜻함을 만나보세요.",
+      "title": "처음딴차 티백",
+      "discountRate": 17,
+      "originalPrice": 18000,
+      "salePrice": 15000,
+      "hashtags": [
+        "#처음딴차",
+        "#녹차티백",
+        "#차입문"
+      ],
+      "badge": "NEW",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 3000,
+      "volume": "21g (1g × 21티백)",
+      "origin": "확인 필요",
+      "rating": 4.7,
+      "reviewCount": 78,
+      "reviews": [
+        {
+          "author": "장**",
+          "rating": 5,
+          "content": "패키지가 예뻐서 책상에 두기만 해도 기분이 좋아요.",
+          "date": "2026-09-14"
+        },
+        {
+          "author": "임**",
+          "rating": 4,
+          "content": "쓴맛이 적어 차를 잘 모르는 저도 편하게 마셔요.",
+          "date": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "DH-006",
+      "category": "잎차·티백",
+      "image": "images/product-06.jpg",
+      "alt": "찻잔과 차꽃이 그려진 유기농 녹차 티백 상자",
+      "description": "하루를 차분하게 시작하고 싶다면, 유기농 녹차 티백 한 잔으로 아침을 열어보세요.",
+      "title": "유기농 녹차 티백 50입",
+      "discountRate": 21,
+      "originalPrice": 7000,
+      "salePrice": 5500,
+      "hashtags": [
+        "#유기농녹차",
+        "#티백",
+        "#아침차"
+      ],
+      "badge": "유기농",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 3000,
+      "volume": "60g (1.2g × 50티백)",
+      "origin": "전남 보성",
+      "rating": 4.8,
+      "reviewCount": 263,
+      "reviews": [
+        {
+          "author": "한**",
+          "rating": 5,
+          "content": "50개입이라 넉넉하고 맛도 깔끔해요.",
+          "date": "2026-09-03"
+        },
+        {
+          "author": "오**",
+          "rating": 5,
+          "content": "재구매했어요. 회사에 두고 매일 마십니다.",
+          "date": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "DH-007",
+      "category": "가루녹차·말차",
+      "image": "images/product-07.jpg",
+      "alt": "짙은 녹색 뚜껑의 유기농 가루녹차 2통",
+      "description": "요리부터 음료까지 두루 쓰고 싶다면, 유기농 가루녹차를 곁에 두어보세요.",
+      "title": "보성 유기농 가루녹차 2통",
+      "discountRate": 18,
+      "originalPrice": 22000,
+      "salePrice": 18000,
+      "hashtags": [
+        "#유기농",
+        "#가루녹차",
+        "#녹차요리"
+      ],
+      "badge": "유기농",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "50g × 2통",
+      "origin": "전남 보성",
+      "rating": 4.8,
+      "reviewCount": 149,
+      "reviews": [
+        {
+          "author": "서**",
+          "rating": 5,
+          "content": "뚜껑이 있는 통이라 쓰기 편해요.",
+          "date": "2026-10-21"
+        },
+        {
+          "author": "신**",
+          "rating": 4,
+          "content": "우유에 타도 향이 진하게 남아요.",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "DH-008",
+      "category": "잎차·티백",
+      "image": "images/product-08.jpg",
+      "alt": "찻잔이 그려진 유기농 현미녹차 티백 상자",
+      "description": "녹차의 쌉쌀함보다 구수한 맛을 좋아하신다면, 현미녹차가 잘 어울립니다.",
+      "title": "유기농 현미녹차 티백 50입",
+      "discountRate": 20,
+      "originalPrice": 7500,
+      "salePrice": 6000,
+      "hashtags": [
+        "#현미녹차",
+        "#구수한맛",
+        "#식후차"
+      ],
+      "badge": "BEST",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 3000,
+      "volume": "75g (1.5g × 50티백)",
+      "origin": "녹차: 전남 보성, 현미: 국내산",
+      "rating": 4.7,
+      "reviewCount": 198,
+      "reviews": [
+        {
+          "author": "권**",
+          "rating": 5,
+          "content": "구수해서 부모님이 특히 좋아하세요.",
+          "date": "2026-10-12"
+        },
+        {
+          "author": "황**",
+          "rating": 4,
+          "content": "밥 먹고 나서 마시면 입안이 개운해요.",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "DH-009",
+      "category": "가루녹차·말차",
+      "image": "images/product-09.png",
+      "alt": "연두색 뚜껑의 보성 가루녹차 2통",
+      "description": "합리적인 가격으로 가루녹차를 넉넉히 쓰고 싶다면, 보성 가루녹차 2통을 담아보세요.",
+      "title": "보성 가루녹차 2통",
+      "discountRate": 20,
+      "originalPrice": 12500,
+      "salePrice": 10000,
+      "hashtags": [
+        "#보성녹차",
+        "#가루녹차",
+        "#실속구성"
+      ],
+      "badge": "가성비",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "50g × 2통",
+      "origin": "전남 보성",
+      "rating": 4.6,
+      "reviewCount": 104,
+      "reviews": [
+        {
+          "author": "안**",
+          "rating": 5,
+          "content": "가격이 좋아서 라떼용으로 부담 없이 써요.",
+          "date": "2026-10-05"
+        },
+        {
+          "author": "송**",
+          "rating": 4,
+          "content": "입자가 고와서 물에 잘 풀려요.",
+          "date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "id": "DH-010",
+      "category": "선물세트·다구",
+      "image": "images/product-10.png",
+      "alt": "보자기 포장과 10종 차가 담긴 컬러풀한 상자",
+      "description": "취향을 몰라 고민된다면, 열 가지 맛을 고루 담은 티 컬렉션으로 마음을 전해보세요.",
+      "title": "10종 티 컬렉션 선물세트",
+      "discountRate": 19,
+      "originalPrice": 48000,
+      "salePrice": 39000,
+      "hashtags": [
+        "#티컬렉션",
+        "#집들이선물",
+        "#블렌딩티"
+      ],
+      "badge": "선물추천",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 0,
+      "volume": "10종 세트",
+      "origin": "확인 필요",
+      "rating": 4.8,
+      "reviewCount": 67,
+      "reviews": [
+        {
+          "author": "류**",
+          "rating": 5,
+          "content": "색이 다채로워 받는 분이 열어보고 좋아했어요.",
+          "date": "2026-09-27"
+        },
+        {
+          "author": "홍**",
+          "rating": 5,
+          "content": "맛을 골라 마시는 재미가 있어요.",
+          "date": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "id": "DH-011",
+      "category": "선물세트·다구",
+      "image": "images/product-11.png",
+      "alt": "분홍 보자기와 대리석 무늬 티 상자",
+      "description": "격식 있는 자리에 드릴 선물을 찾으신다면, 보자기로 감싼 프리미엄 세트를 추천합니다.",
+      "title": "프리미엄 보자기 티 세트",
+      "discountRate": 20,
+      "originalPrice": 65000,
+      "salePrice": 52000,
+      "hashtags": [
+        "#보자기포장",
+        "#프리미엄선물",
+        "#감사선물"
+      ],
+      "badge": "선물추천",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 0,
+      "volume": "티 세트 1박스",
+      "origin": "확인 필요",
+      "rating": 4.9,
+      "reviewCount": 58,
+      "reviews": [
+        {
+          "author": "전**",
+          "rating": 5,
+          "content": "보자기 포장 덕분에 따로 포장할 필요가 없었어요.",
+          "date": "2026-09-18"
+        },
+        {
+          "author": "고**",
+          "rating": 5,
+          "content": "거래처 선물로 드렸는데 반응이 좋았어요.",
+          "date": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "id": "DH-012",
+      "category": "음료·베이스",
+      "image": "images/product-12.png",
+      "alt": "말차 포션과 호지차 포션 상자",
+      "description": "집에서도 카페 라떼를 즐기고 싶다면, 우유에 포션 하나만 더해보세요.",
+      "title": "말차·호지차 포션 세트",
+      "discountRate": 17,
+      "originalPrice": 24000,
+      "salePrice": 19900,
+      "hashtags": [
+        "#말차포션",
+        "#호지차",
+        "#홈카페"
+      ],
+      "badge": "NEW",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "250g (25g × 10개입) × 2종",
+      "origin": "확인 필요",
+      "rating": 4.7,
+      "reviewCount": 88,
+      "reviews": [
+        {
+          "author": "문**",
+          "rating": 5,
+          "content": "우유에 넣기만 하면 돼서 정말 간편해요.",
+          "date": "2026-09-08"
+        },
+        {
+          "author": "양**",
+          "rating": 4,
+          "content": "호지차 쪽이 특히 고소하고 맛있어요.",
+          "date": "2026-09-03"
+        }
+      ]
+    },
+    {
+      "id": "DH-013",
+      "category": "선물세트·다구",
+      "image": "images/product-13.png",
+      "alt": "작설 삼각티백 6박스가 담긴 선물 상자",
+      "description": "정성이 느껴지는 차 선물을 찾으신다면, 삼각 티백 세트로 품격을 더해보세요.",
+      "title": "작설 삼각티백 6박스 세트",
+      "discountRate": 20,
+      "originalPrice": 42000,
+      "salePrice": 33600,
+      "hashtags": [
+        "#작설차",
+        "#삼각티백",
+        "#명절선물"
+      ],
+      "badge": "무료배송",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 0,
+      "volume": "15g (1.5g × 10티백) × 6박스",
+      "origin": "확인 필요",
+      "rating": 4.8,
+      "reviewCount": 74,
+      "reviews": [
+        {
+          "author": "배**",
+          "rating": 5,
+          "content": "티백이 예쁘고 찻잎이 잘 우러나요.",
+          "date": "2026-10-28"
+        },
+        {
+          "author": "백**",
+          "rating": 5,
+          "content": "구성이 좋아서 명절마다 주문해요.",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "DH-014",
+      "category": "가루녹차·말차",
+      "image": "images/product-14.png",
+      "alt": "연녹색 프리미엄 말차 파우치",
+      "description": "진한 말차의 풍미를 원하신다면, 프리미엄 말차로 집에서 격식 있게 즐겨보세요.",
+      "title": "프리미엄 말차 파우치",
+      "discountRate": 20,
+      "originalPrice": 18000,
+      "salePrice": 14400,
+      "hashtags": [
+        "#프리미엄말차",
+        "#말차라떼",
+        "#홈카페"
+      ],
+      "badge": "BEST",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 3000,
+      "volume": "80g",
+      "origin": "확인 필요",
+      "rating": 4.8,
+      "reviewCount": 121,
+      "reviews": [
+        {
+          "author": "허**",
+          "rating": 5,
+          "content": "색이 선명하고 쓴맛보다 감칠맛이 좋아요.",
+          "date": "2026-10-17"
+        },
+        {
+          "author": "남**",
+          "rating": 4,
+          "content": "말차라떼 만들 때 향이 잘 살아요.",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "DH-015",
+      "category": "가루녹차·말차",
+      "image": "images/product-15.png",
+      "alt": "은색 대용량 그린티 파우더 파우치",
+      "description": "카페나 대용량으로 쓰신다면, 넉넉한 500g 그린티 파우더가 효율적입니다.",
+      "title": "그린티 파우더 15 대용량",
+      "discountRate": 16,
+      "originalPrice": 32000,
+      "salePrice": 27000,
+      "hashtags": [
+        "#대용량",
+        "#그린티파우더",
+        "#카페재료"
+      ],
+      "badge": "대용량",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "500g",
+      "origin": "확인 필요",
+      "rating": 4.5,
+      "reviewCount": 46,
+      "reviews": [
+        {
+          "author": "심**",
+          "rating": 5,
+          "content": "매장에서 쓰기 좋은 용량이에요.",
+          "date": "2026-10-09"
+        },
+        {
+          "author": "노**",
+          "rating": 4,
+          "content": "음료용으로 잘 녹고 맛이 일정해요.",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "DH-016",
+      "category": "음료·베이스",
+      "image": "images/product-16.png",
+      "alt": "녹색 라벨의 그린티 카페 베이스 병",
+      "description": "라떼를 자주 드신다면, 짜서 바로 쓰는 카페 베이스로 시간을 아껴보세요.",
+      "title": "그린티 카페 베이스 시럽",
+      "discountRate": 20,
+      "originalPrice": 13000,
+      "salePrice": 10400,
+      "hashtags": [
+        "#카페베이스",
+        "#녹차시럽",
+        "#간편라떼"
+      ],
+      "badge": "NEW",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "450g",
+      "origin": "국내산 (가루녹차)",
+      "rating": 4.6,
+      "reviewCount": 63,
+      "reviews": [
+        {
+          "author": "하**",
+          "rating": 5,
+          "content": "우유에 섞기만 해도 카페 맛이 나요.",
+          "date": "2026-10-02"
+        },
+        {
+          "author": "곽**",
+          "rating": 4,
+          "content": "병이 짜기 쉬워서 양 조절이 편해요.",
+          "date": "2026-09-27"
+        }
+      ]
+    },
+    {
+      "id": "DH-017",
+      "category": "가루녹차·말차",
+      "image": "images/product-17.png",
+      "alt": "말차 캔과 차선, 말차 한 그릇",
+      "description": "제대로 격불한 한 잔을 마시고 싶다면, 다도용 말차로 시작해보세요.",
+      "title": "세레모니얼 말차",
+      "discountRate": 15,
+      "originalPrice": 28000,
+      "salePrice": 23800,
+      "hashtags": [
+        "#세레모니얼말차",
+        "#격불",
+        "#다도"
+      ],
+      "badge": "프리미엄",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내·해외배송",
+      "shippingFee": 3000,
+      "volume": "40g",
+      "origin": "확인 필요",
+      "rating": 4.9,
+      "reviewCount": 55,
+      "reviews": [
+        {
+          "author": "성**",
+          "rating": 5,
+          "content": "거품이 곱게 나고 향이 깊어요.",
+          "date": "2026-09-22"
+        },
+        {
+          "author": "차**",
+          "rating": 5,
+          "content": "다도를 배우면서 쓰기 좋은 말차예요.",
+          "date": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "id": "DH-018",
+      "category": "선물세트·다구",
+      "image": "images/product-18.png",
+      "alt": "다완, 숙우, 차선, 차시가 담긴 녹색 상자",
+      "description": "말차를 처음 배우신다면, 필요한 도구가 모두 담긴 세트로 편하게 시작해보세요.",
+      "title": "말차 다기 입문 세트",
+      "discountRate": 20,
+      "originalPrice": 78000,
+      "salePrice": 62400,
+      "hashtags": [
+        "#말차도구",
+        "#차선",
+        "#입문세트",
+        "#취미선물"
+      ],
+      "badge": "선물추천",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 0,
+      "volume": "다완·숙우·차선·차시 구성",
+      "origin": "확인 필요",
+      "rating": 4.8,
+      "reviewCount": 39,
+      "reviews": [
+        {
+          "author": "주**",
+          "rating": 5,
+          "content": "구성이 알차서 따로 살 필요가 없었어요.",
+          "date": "2026-09-14"
+        },
+        {
+          "author": "우**",
+          "rating": 5,
+          "content": "그릇이 예뻐서 차 마시는 시간이 즐거워요.",
+          "date": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "DH-019",
+      "category": "선물세트·다구",
+      "image": "images/product-19.png",
+      "alt": "리넨 위에 놓인 나무 차시와 찻숟가락",
+      "description": "차 도구에 따뜻한 멋을 더하고 싶다면, 결이 살아있는 나무 차시를 곁에 두어보세요.",
+      "title": "나무 차시 세트",
+      "discountRate": 20,
+      "originalPrice": 24000,
+      "salePrice": 19200,
+      "hashtags": [
+        "#나무차시",
+        "#찻숟가락",
+        "#티웨어"
+      ],
+      "badge": "나무 소재",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "차시 6종",
+      "origin": "확인 필요",
+      "rating": 4.7,
+      "reviewCount": 28,
+      "reviews": [
+        {
+          "author": "구**",
+          "rating": 5,
+          "content": "나무 결이 고와서 손에 잡히는 느낌이 좋아요.",
+          "date": "2026-09-03"
+        },
+        {
+          "author": "민**",
+          "rating": 4,
+          "content": "찻잎 덜 때 흘리지 않아 편해요.",
+          "date": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "DH-020",
+      "category": "생활·기타",
+      "image": "images/product-20.jpg",
+      "alt": "빨간색과 분홍색 비단 녹차베개",
+      "description": "부모님께 정겨운 선물을 드리고 싶다면, 전통 비단 느낌의 녹차베개는 어떠세요?",
+      "title": "전통 자수 녹차베개",
+      "discountRate": 20,
+      "originalPrice": 35000,
+      "salePrice": 28000,
+      "hashtags": [
+        "#녹차베개",
+        "#효도선물",
+        "#전통소품"
+      ],
+      "badge": "선물추천",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "베개 2개 구성",
+      "origin": "확인 필요",
+      "rating": 4.5,
+      "reviewCount": 34,
+      "reviews": [
+        {
+          "author": "유**",
+          "rating": 5,
+          "content": "색이 고와서 어머니가 좋아하셨어요.",
+          "date": "2026-10-21"
+        },
+        {
+          "author": "나**",
+          "rating": 4,
+          "content": "은은한 녹차 향이 나서 마음에 들어요.",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "DH-021",
+      "category": "선물세트·다구",
+      "image": "images/product-21.jpg",
+      "alt": "찻잔, 다관, 숙우가 담긴 검은색 다기 상자",
+      "description": "집에서 다도를 즐기고 싶다면, 찻잔부터 다관까지 갖춘 세트로 차 자리를 꾸며보세요.",
+      "title": "전통 다기 풀세트",
+      "discountRate": 20,
+      "originalPrice": 89000,
+      "salePrice": 71200,
+      "hashtags": [
+        "#다기세트",
+        "#다도",
+        "#집들이선물"
+      ],
+      "badge": "무료배송",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 0,
+      "volume": "찻잔 5개·다관·숙우·차통 구성",
+      "origin": "확인 필요",
+      "rating": 4.8,
+      "reviewCount": 41,
+      "reviews": [
+        {
+          "author": "표**",
+          "rating": 5,
+          "content": "유약 색이 은은해서 고급스러워요.",
+          "date": "2026-10-12"
+        },
+        {
+          "author": "변**",
+          "rating": 5,
+          "content": "상자 포장이 단단해서 안전하게 받았어요.",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "DH-022",
+      "category": "생활·기타",
+      "image": "images/product-22.jpg",
+      "alt": "입자가 보이는 녹차볶음소금 지퍼백",
+      "description": "평범한 음식에 은은한 풍미를 더하고 싶다면, 녹차볶음소금을 식탁에 올려보세요.",
+      "title": "녹차 볶음소금",
+      "discountRate": 20,
+      "originalPrice": 15000,
+      "salePrice": 12000,
+      "hashtags": [
+        "#볶음소금",
+        "#녹차소금",
+        "#요리재료"
+      ],
+      "badge": "NEW",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "확인 필요",
+      "origin": "신안 천일염, 국내산 녹차",
+      "rating": 4.6,
+      "reviewCount": 37,
+      "reviews": [
+        {
+          "author": "염**",
+          "rating": 5,
+          "content": "구이에 찍어 먹으면 정말 맛있어요.",
+          "date": "2026-10-05"
+        },
+        {
+          "author": "천**",
+          "rating": 4,
+          "content": "지퍼백이라 보관이 편해요.",
+          "date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "id": "DH-023",
+      "category": "생활·기타",
+      "image": "images/product-23.jpg",
+      "alt": "유기농 녹차비누 상자와 낱개 비누 3개",
+      "description": "욕실에도 녹차의 싱그러움을 들이고 싶다면, 유기농 녹차비누를 써보세요.",
+      "title": "유기농 녹차비누 3개입",
+      "discountRate": 20,
+      "originalPrice": 18000,
+      "salePrice": 14400,
+      "hashtags": [
+        "#녹차비누",
+        "#욕실용품",
+        "#작은선물"
+      ],
+      "badge": "유기농",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "3개입",
+      "origin": "확인 필요",
+      "rating": 4.6,
+      "reviewCount": 52,
+      "reviews": [
+        {
+          "author": "방**",
+          "rating": 5,
+          "content": "녹차 향이 은은해서 세수할 때 기분이 좋아요.",
+          "date": "2026-09-27"
+        },
+        {
+          "author": "공**",
+          "rating": 4,
+          "content": "낱개 포장이라 나눠 쓰기 좋아요.",
+          "date": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "id": "DH-024",
+      "category": "생활·기타",
+      "image": "images/product-24.jpg",
+      "alt": "주황색 라벨이 붙은 둥근 천연비누",
+      "description": "자연스러운 재료의 비누를 찾으신다면, 정성껏 만든 수제 녹차비누를 골라보세요.",
+      "title": "어성초·자소엽·녹차 천연비누",
+      "discountRate": 20,
+      "originalPrice": 9000,
+      "salePrice": 7200,
+      "hashtags": [
+        "#천연비누",
+        "#어성초",
+        "#수제비누"
+      ],
+      "badge": "천연비누",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "1개",
+      "origin": "보성 (라벨 표기)",
+      "rating": 4.7,
+      "reviewCount": 44,
+      "reviews": [
+        {
+          "author": "길**",
+          "rating": 5,
+          "content": "거품이 부드럽고 향이 강하지 않아요.",
+          "date": "2026-09-18"
+        },
+        {
+          "author": "석**",
+          "rating": 4,
+          "content": "모양이 예뻐서 선물로도 좋을 것 같아요.",
+          "date": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "id": "DH-025",
+      "category": "선물세트·다구",
+      "image": "images/product-25.jpg",
+      "alt": "녹차 캔과 유리 티포트, 파란색 상자",
+      "description": "차를 편하게 우려 마시고 싶다면, 녹차와 티포트를 함께 담은 세트가 제격입니다.",
+      "title": "녹차 다기 세트",
+      "discountRate": 20,
+      "originalPrice": 45000,
+      "salePrice": 36000,
+      "hashtags": [
+        "#티포트",
+        "#녹차세트",
+        "#사무실차"
+      ],
+      "badge": "무료배송",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 0,
+      "volume": "녹차 1통·유리 티포트 구성",
+      "origin": "확인 필요",
+      "rating": 4.7,
+      "reviewCount": 49,
+      "reviews": [
+        {
+          "author": "설**",
+          "rating": 5,
+          "content": "티포트가 편해서 회사에서 매일 써요.",
+          "date": "2026-09-08"
+        },
+        {
+          "author": "마**",
+          "rating": 4,
+          "content": "선물로 드리기에 구성이 좋아요.",
+          "date": "2026-09-03"
+        }
+      ]
+    },
+    {
+      "id": "DH-026",
+      "category": "생활·기타",
+      "image": "images/product-26.jpg",
+      "alt": "보성녹차 입욕제 상자와 티백형 입욕제",
+      "description": "하루의 끝에 여유가 필요하다면, 따뜻한 물에 보성녹차 입욕제를 풀어보세요.",
+      "title": "보성녹차 입욕제",
+      "discountRate": 20,
+      "originalPrice": 16000,
+      "salePrice": 12800,
+      "hashtags": [
+        "#입욕제",
+        "#반신욕",
+        "#보성녹차"
+      ],
+      "badge": "NEW",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "확인 필요",
+      "origin": "보성 녹차 사용 (라벨 표기)",
+      "rating": 4.6,
+      "reviewCount": 31,
+      "reviews": [
+        {
+          "author": "경**",
+          "rating": 5,
+          "content": "욕실에 녹차 향이 퍼져서 편안해요.",
+          "date": "2026-10-28"
+        },
+        {
+          "author": "도**",
+          "rating": 4,
+          "content": "티백 형태라 뒷정리가 간단해요.",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "DH-027",
+      "category": "선물세트·다구",
+      "image": "images/product-27.png",
+      "alt": "손잡이 모양이 다른 나무 거름망 3개",
+      "description": "잎차의 찌꺼기 없이 맑게 즐기고 싶다면, 나무 찻잎 거름망을 함께 준비해보세요.",
+      "title": "나무 찻잎 거름망 3종",
+      "discountRate": 20,
+      "originalPrice": 15000,
+      "salePrice": 12000,
+      "hashtags": [
+        "#차거름망",
+        "#나무다구",
+        "#잎차도구"
+      ],
+      "badge": "나무 소재",
+      "shippingMethod": "택배",
+      "shippingRegion": "국내배송",
+      "shippingFee": 3000,
+      "volume": "거름망 3종",
+      "origin": "확인 필요",
+      "rating": 4.5,
+      "reviewCount": 22,
+      "reviews": [
+        {
+          "author": "태**",
+          "rating": 5,
+          "content": "나무 결이 고와서 손에 잡히는 느낌이 좋아요.",
+          "date": "2026-10-17"
+        },
+        {
+          "author": "은**",
+          "rating": 4,
+          "content": "찻잎 덜 때 흘리지 않아 편해요.",
+          "date": "2026-10-12"
+        }
+      ]
+    }
+  ]
+}

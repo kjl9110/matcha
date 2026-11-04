@@ -1,0 +1,29 @@
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-line);
+}
+
+.bottom-nav button {
+  padding: 8px;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 본문이 네비게이션에 가려지지 않게 */
+body {
+  padding-bottom: 64px;
+}

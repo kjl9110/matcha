@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #F05C18;
+  --color-secondary: #145838;
+  --color-logo: #208C2C;
+  --color-sale: #FF305C;
+  --color-star: #F46460;
+  --color-navy: #143050;
+  --color-olive: #8B9467;
+  --color-badge-pink: #EE91C3;
+  --color-badge-purple: #726DAB;
+
+  --color-bg-page: #FCE4E0;
+  --color-bg: #FFFFFF;
+  --color-bg-footer: #F4F4F8;
+  --color-line: #ECECEC;
+  --color-tab-active: #E8E8E8;
+
+  --color-text: #000000;
+  --color-text-sub: #545454;
+  --color-text-muted: #999999;
+
+  --font-base: "Paperlogy", "Pretendard", "Noto Sans KR", sans-serif;
+  --font-serif: "Noto Serif KR", serif;
+}

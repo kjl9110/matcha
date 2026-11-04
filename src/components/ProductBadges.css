@@ -1,0 +1,20 @@
+.product-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.badge {
+  padding: 0 4px;
+  border: 1px solid var(--color-line);
+  font-size: 12px;
+}
+
+.badge--pink {
+  color: var(--color-badge-pink);
+}
+
+.badge--purple {
+  color: var(--color-badge-purple);
+}

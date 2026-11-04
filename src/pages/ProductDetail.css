@@ -1,0 +1,261 @@
+.detail-empty {
+  padding: 120px 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.detail-empty a {
+  color: var(--color-secondary);
+}
+
+.detail__nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 48px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-sub);
+}
+
+.detail__nav button {
+  padding: 4px;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.detail__image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.detail__body {
+  padding: 24px 16px 40px;
+}
+
+.detail__badge {
+  display: inline-block;
+  padding: 0 8px;
+  border: 1px solid var(--color-line);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.detail__title {
+  margin: 12px 0 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.detail__desc {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.detail__price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 20px 0 0;
+}
+
+.detail__discount {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-sale);
+}
+
+.detail__price strong {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.detail__price del {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.detail__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0 0;
+  font-size: 12px;
+}
+
+.detail__rating svg {
+  color: var(--color-star);
+}
+
+.detail__rating span {
+  margin-left: 4px;
+  color: var(--color-text-muted);
+}
+
+.detail__info {
+  margin: 20px 0 0;
+  padding: 16px 0;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.detail__info div {
+  display: flex;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.detail__info dt {
+  flex-shrink: 0;
+  width: 64px;
+  color: var(--color-text-muted);
+}
+
+.detail__info dd {
+  margin: 0;
+}
+
+.detail__tags {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.detail__order {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-bg-footer);
+}
+
+.detail__quantity,
+.detail__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.detail__stepper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  background: var(--color-bg);
+}
+
+.detail__stepper button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.detail__stepper button:disabled {
+  color: var(--color-line);
+  cursor: default;
+}
+
+.detail__stepper output {
+  min-width: 32px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.detail__total {
+  margin: 16px 0 0;
+}
+
+.detail__total strong {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.detail__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.detail__buttons button {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.detail__cart {
+  border: 1px solid var(--color-secondary);
+  background: var(--color-bg);
+  color: var(--color-secondary);
+}
+
+.detail__buy {
+  border: 1px solid var(--color-secondary);
+  background: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+.detail__section {
+  padding: 40px 16px 48px;
+}
+
+.detail__reviews {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.detail__reviews li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.detail__review-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.detail__review-meta time {
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.detail__reviews p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.detail__related {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}

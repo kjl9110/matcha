@@ -1,0 +1,30 @@
+.recommend {
+  padding: 56px 12px 0;
+}
+
+.recommend__slider {
+  position: relative;
+  margin-top: 32px;
+}
+
+.recommend__arrow {
+  position: absolute;
+  /* 상품 이미지(카드 폭 = (화면 폭 - 좌우 여백 24px - 간격 16px) / 3)의 세로 가운데 */
+  top: calc((min(100vw, 500px) - 40px) / 6);
+  z-index: 1;
+  transform: translateY(-50%);
+  padding: 4px;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.recommend__arrow--prev {
+  left: -8px;
+}
+
+.recommend__arrow--next {
+  right: -8px;
+}

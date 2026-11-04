@@ -1,0 +1,15 @@
+.event-section {
+  padding: 48px 16px 56px;
+}
+
+.event-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.event-section__list img {
+  width: 100%;
+  border-radius: 12px;
+}

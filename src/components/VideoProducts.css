@@ -1,0 +1,11 @@
+.video-products {
+  padding: 48px 12px 56px;
+}
+
+.video-products__banner {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-top: 24px;
+  border-radius: 12px;
+}
