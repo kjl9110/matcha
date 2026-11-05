@@ -1,0 +1,6 @@
+# CLI 배포 시 업로드하지 않을 파일
+design/
+.env*
+!.env.example
+node_modules/
+dist/

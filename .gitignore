@@ -25,3 +25,7 @@ dist-ssr
 
 # 시안 원본 (외부 업체 정보 포함, 배포 불필요)
 design/
+
+.vercel
+.env*
+!.env.example
