@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { IoPersonOutline, IoCartOutline, IoSearch } from 'react-icons/io5'
+import CartLink from './CartLink.jsx'
 import './Header.css'
 
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
         </h1>
         <div className="header__actions">
           <button type="button" aria-label="마이페이지"><IoPersonOutline /></button>
-          <button type="button" aria-label="장바구니"><IoCartOutline /></button>
+          <CartLink icon={<IoCartOutline />} />
           <button type="button" aria-label="검색"><IoSearch /></button>
         </div>
       </header>

@@ -215,6 +215,18 @@
   color: var(--color-bg);
 }
 
+.detail__added {
+  margin: 12px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.detail__added a {
+  color: var(--color-text);
+}
+
 .detail__section {
   padding: 40px 16px 48px;
 }

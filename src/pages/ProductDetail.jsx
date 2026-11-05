@@ -5,6 +5,8 @@ import data from '../data/daehandawon_products.json'
 import SectionTitle from '../components/SectionTitle.jsx'
 import ProductCard from '../components/ProductCard.jsx'
 import StarRating from '../components/StarRating.jsx'
+import { useCart } from '../context/useCart.js'
+import { MAX_QUANTITY } from '../utils/order.js'
 import './ProductDetail.css'
 
 // JSON에서 아직 정해지지 않은 값
@@ -29,7 +31,19 @@ function ProductDetail() {
 
 function DetailContent({ product }) {
   const navigate = useNavigate()
+  const { addItem } = useCart()
   const [quantity, setQuantity] = useState(1)
+  const [added, setAdded] = useState(false)
+
+  const addToCart = () => {
+    addItem(product.id, quantity)
+    setAdded(true)
+  }
+
+  // 구매하기: 장바구니를 거치지 않고 이 상품만 바로 주문
+  const buyNow = () => {
+    navigate('/checkout', { state: { items: [{ id: product.id, quantity }] } })
+  }
 
   const {
     image, alt, title, category, badge, description, discountRate, originalPrice, salePrice,
@@ -104,7 +118,12 @@ function DetailContent({ product }) {
                 <IoRemove />
               </button>
               <output aria-live="polite">{quantity}</output>
-              <button type="button" aria-label="수량 더하기" onClick={() => setQuantity(quantity + 1)}>
+              <button
+                type="button"
+                aria-label="수량 더하기"
+                disabled={quantity >= MAX_QUANTITY}
+                onClick={() => setQuantity(quantity + 1)}
+              >
                 <IoAdd />
               </button>
             </div>
@@ -114,9 +133,14 @@ function DetailContent({ product }) {
             <strong>{(salePrice * quantity).toLocaleString()}원</strong>
           </p>
           <div className="detail__buttons">
-            <button type="button" className="detail__cart">장바구니</button>
-            <button type="button" className="detail__buy">구매하기</button>
+            <button type="button" className="detail__cart" onClick={addToCart}>장바구니</button>
+            <button type="button" className="detail__buy" onClick={buyNow}>구매하기</button>
           </div>
+          {added && (
+            <p className="detail__added" role="status">
+              장바구니에 담았습니다. <Link to="/cart">장바구니 보기</Link>
+            </p>
+          )}
         </div>
       </div>
 

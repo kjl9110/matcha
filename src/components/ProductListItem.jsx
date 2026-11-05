@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import { IoBasketOutline, IoHeartOutline } from 'react-icons/io5'
+import { useCart } from '../context/useCart.js'
 import ProductBadges from './ProductBadges.jsx'
 import './ProductListItem.css'
 
 // 가로형 상품 한 줄 (왼쪽 이미지 + 오른쪽 정보 + 장바구니·찜)
 function ProductListItem({ product }) {
   const { id, image, alt, title, salePrice, hashtags } = product
+  const { addItem } = useCart()
 
   return (
     <li className="product-item">
@@ -19,7 +21,9 @@ function ProductListItem({ product }) {
         </div>
       </Link>
       <div className="product-item__actions">
-        <button type="button" aria-label={`${title} 장바구니 담기`}><IoBasketOutline /></button>
+        <button type="button" aria-label={`${title} 장바구니 담기`} onClick={() => addItem(id)}>
+          <IoBasketOutline />
+        </button>
         <button type="button" aria-label={`${title} 찜하기`}><IoHeartOutline /></button>
       </div>
     </li>

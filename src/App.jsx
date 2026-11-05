@@ -6,6 +6,10 @@ import BottomNav from './components/BottomNav.jsx'
 import FloatingButtons from './components/FloatingButtons.jsx'
 import Home from './pages/Home.jsx'
 import ProductDetail from './pages/ProductDetail.jsx'
+import Cart from './pages/Cart.jsx'
+import Checkout from './pages/Checkout.jsx'
+import PaymentSuccess from './pages/PaymentSuccess.jsx'
+import PaymentFail from './pages/PaymentFail.jsx'
 import './App.css'
 
 function App() {
@@ -28,6 +32,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/payment/success" element={<PaymentSuccess />} />
+            <Route path="/payment/fail" element={<PaymentFail />} />
           </Routes>
         </main>
         <Footer />
