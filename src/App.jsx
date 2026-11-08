@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link, Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header.jsx'
+import BackBar from './components/BackBar.jsx'
 import Footer from './components/Footer.jsx'
 import BottomNav from './components/BottomNav.jsx'
 import FloatingButtons from './components/FloatingButtons.jsx'
@@ -48,6 +49,7 @@ function App() {
       <div className="app">
         <Header />
         <main>
+          <BackBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail />} />

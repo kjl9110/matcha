@@ -9,19 +9,10 @@
 
 .product-item {
   display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.product-item__link {
-  display: flex;
-  flex: 1;
   gap: 20px;
-  color: var(--color-text);
-  text-decoration: none;
 }
 
-.product-item__link img {
+.product-item__image img {
   width: 160px;
   height: 160px;
   object-fit: cover;
@@ -29,7 +20,15 @@
 }
 
 .product-item__info {
+  flex: 1;
+  min-width: 0;
   padding-top: 8px;
+}
+
+.product-item__link {
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 .product-item__title {
@@ -52,7 +51,8 @@
 
 .product-item__actions {
   display: flex;
-  gap: 4px;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .product-item__actions button {

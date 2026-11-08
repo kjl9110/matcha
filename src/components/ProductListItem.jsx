@@ -8,7 +8,7 @@ import './ProductListItem.css'
 
 const TOAST_MS = 2000
 
-// 가로형 상품 한 줄 (왼쪽 이미지 + 오른쪽 정보 + 장바구니·찜)
+// 가로형 상품 한 줄 (왼쪽 이미지 + 오른쪽 정보, 정보 아래 장바구니·찜)
 function ProductListItem({ product }) {
   const { id, image, alt, title, salePrice, hashtags } = product
   const { items, addItem } = useCart()
@@ -31,33 +31,35 @@ function ProductListItem({ product }) {
 
   return (
     <li className="product-item">
-      <Link to={`/product/${id}`} className="product-item__link">
+      <Link to={`/product/${id}`} className="product-item__image" tabIndex={-1} aria-hidden="true">
         <img src={`/${image}`} alt={alt} />
-        <div className="product-item__info">
+      </Link>
+      <div className="product-item__info">
+        <Link to={`/product/${id}`} className="product-item__link">
           <p className="product-item__title">{title}</p>
           <p className="product-item__price">{salePrice.toLocaleString()}원</p>
           <p className="product-item__tags">{hashtags.join(' ')}</p>
           <ProductBadges product={product} />
+        </Link>
+        <div className="product-item__actions">
+          <button
+            type="button"
+            className={inCart ? 'is-added' : ''}
+            aria-label={`${title} 장바구니 담기`}
+            onClick={addToCart}
+          >
+            {inCart ? <IoBasket /> : <IoBasketOutline />}
+          </button>
+          <button
+            type="button"
+            className={wished ? 'is-wished' : ''}
+            aria-label={`${title} 찜하기`}
+            aria-pressed={wished}
+            onClick={() => toggleWish(id)}
+          >
+            {wished ? <IoHeart /> : <IoHeartOutline />}
+          </button>
         </div>
-      </Link>
-      <div className="product-item__actions">
-        <button
-          type="button"
-          className={inCart ? 'is-added' : ''}
-          aria-label={`${title} 장바구니 담기`}
-          onClick={addToCart}
-        >
-          {inCart ? <IoBasket /> : <IoBasketOutline />}
-        </button>
-        <button
-          type="button"
-          className={wished ? 'is-wished' : ''}
-          aria-label={`${title} 찜하기`}
-          aria-pressed={wished}
-          onClick={() => toggleWish(id)}
-        >
-          {wished ? <IoHeart /> : <IoHeartOutline />}
-        </button>
       </div>
       {addedAt && (
         <p className="product-item__toast" role="status">

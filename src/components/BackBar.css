@@ -1,0 +1,18 @@
+/* 상세페이지 뒤로가기 줄(.detail__nav)과 같은 모양 */
+.back-bar {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 8px;
+}
+
+.back-bar button {
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 24px;
+  cursor: pointer;
+}
