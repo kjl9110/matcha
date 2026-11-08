@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   IoCardOutline,
   IoShieldCheckmarkOutline,
@@ -6,7 +7,14 @@ import {
 } from 'react-icons/io5'
 import './Footer.css'
 
-const links = ['홈', '회사소개', '이용약관', '개인정보취급방침', '이용안내']
+const links = [
+  { label: '홈', to: '/' },
+  { label: '브랜드 이야기', to: '/story' },
+  { label: '회사소개', to: '/info/company' },
+  { label: '이용약관', to: '/info/terms' },
+  { label: '개인정보취급방침', to: '/info/privacy' },
+  { label: '이용안내', to: '/info/guide' },
+]
 
 const certs = [
   { Icon: IoCardOutline, label: '신용카드결제' },
@@ -38,8 +46,8 @@ function Footer() {
         </div>
 
         <ul className="footer__links">
-          {links.map((link) => (
-            <li key={link}><a href="#">{link}</a></li>
+          {links.map(({ label, to }) => (
+            <li key={label}><Link to={to}>{label}</Link></li>
           ))}
         </ul>
 

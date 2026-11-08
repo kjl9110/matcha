@@ -101,6 +101,25 @@
   border-color: var(--color-tab-active);
 }
 
+.all-products__sort {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.all-products__sort select {
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .all-products__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

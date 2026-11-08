@@ -190,9 +190,23 @@
 
 .detail__buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 48px 1fr 1fr;
   gap: 8px;
   margin-top: 16px;
+}
+
+.detail__buttons .detail__wish {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--color-line);
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  font-size: 24px;
+}
+
+.detail__buttons .detail__wish.is-wished {
+  color: var(--color-sale);
 }
 
 .detail__buttons button {
@@ -225,6 +239,177 @@
 
 .detail__added a {
   color: var(--color-text);
+}
+
+/* 헤더 바로 아래에 고정되는 섹션 이동 메뉴 */
+.detail__tabs {
+  position: sticky;
+  top: 56px;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-bg);
+}
+
+.detail__tabs button {
+  height: 48px;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.detail__tabs button + button {
+  border-left: 1px solid var(--color-line);
+}
+
+/* 고정 헤더와 메뉴에 제목이 가리지 않게 */
+#detail-info,
+#detail-reviews,
+#detail-delivery {
+  scroll-margin-top: 104px;
+}
+
+.detail__story {
+  padding: 56px 24px 48px;
+}
+
+.detail__headline {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  white-space: pre-line;
+  color: var(--color-secondary);
+}
+
+.detail__lead {
+  margin: 20px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-text-sub);
+  word-break: keep-all;
+}
+
+.detail__points {
+  counter-reset: point;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.detail__points li {
+  counter-increment: point;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.detail__points li::before {
+  content: counter(point, decimal-leading-zero);
+  grid-row: span 2;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.detail__points strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.detail__points p {
+  grid-column: 2;
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.detail__guide {
+  margin-top: 24px;
+  padding: 24px;
+  color: var(--color-bg);
+  background: var(--color-secondary);
+}
+
+.detail__guide h4 {
+  margin: 0 0 16px;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.detail__guide ol {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.detail__guide li {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.detail__guide li + li {
+  margin-top: 8px;
+}
+
+.detail__notes {
+  margin-top: 40px;
+}
+
+.detail__notes--plain {
+  margin-top: 16px;
+}
+
+.detail__notes h4 {
+  margin: 24px 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.detail__notes > h4:first-child {
+  margin-top: 0;
+}
+
+.detail__notes ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.detail__spec {
+  margin: 0;
+  border-top: 1px solid var(--color-text);
+}
+
+.detail__spec div {
+  display: flex;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.detail__spec dt {
+  flex-shrink: 0;
+  width: 64px;
+  color: var(--color-text-muted);
+}
+
+.detail__spec dd {
+  margin: 0;
 }
 
 .detail__section {

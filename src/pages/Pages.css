@@ -1,0 +1,322 @@
+/* 회원 · 메뉴 · 이벤트 · 안내 · 문의 페이지 공통 (기본 틀은 Order.css) */
+.page-demo-notice {
+  margin: 12px 0 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--color-bg-footer);
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.page-link-row {
+  margin: 20px 0 0;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-text-sub);
+}
+
+.page-link-row a {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.page-sub {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.page-heading {
+  margin: 32px 0 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.page-empty {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.page-text {
+  margin: 16px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-sub);
+  word-break: keep-all;
+}
+
+.page-coupon {
+  margin-top: 20px;
+  padding: 20px;
+  border-left: 3px solid var(--color-gold);
+  color: var(--color-cream);
+  background: var(--color-forest);
+}
+
+.page-coupon strong {
+  font-family: var(--font-serif);
+  font-size: 16px;
+}
+
+.page-coupon p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.page-list {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-list > li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.page-order {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-sub);
+}
+
+.page-order strong {
+  color: var(--color-text);
+}
+
+.page-menu {
+  margin: 8px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--color-line);
+  list-style: none;
+}
+
+.page-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-menu svg {
+  color: var(--color-text-muted);
+}
+
+.page-text-button {
+  display: block;
+  margin: 24px auto 0;
+  padding: 8px 16px;
+  border: 0;
+  background: none;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-review {
+  display: flex;
+  gap: 12px;
+}
+
+.page-review img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.page-review > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.page-review__title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.page-review__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.page-review p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.page-event a {
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.page-event img {
+  width: 100%;
+}
+
+.page-event strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.page-event__image {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.page-bullets {
+  margin: 8px 0 0;
+  padding: 0 0 0 16px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.page-textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.page-textarea:focus {
+  border-color: var(--color-secondary);
+  outline: 0;
+}
+
+/* 톡톡 · 카톡 자동 상담 창 */
+.consult--talk {
+  --consult-color: #03C75A;
+  --consult-on-color: var(--color-bg);
+  --consult-chat-bg: #EAF8F0;
+}
+
+.consult--kakao {
+  --consult-color: #FEE500;
+  --consult-on-color: #191919;
+  --consult-chat-bg: #BACEE0;
+}
+
+.consult__header {
+  padding: 20px 16px;
+  color: var(--consult-on-color);
+  background: var(--consult-color);
+}
+
+.consult__header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.consult__header p {
+  margin: 4px 0 0;
+  font-size: 12px;
+}
+
+.consult__chat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 240px;
+  padding: 16px;
+  background: var(--consult-chat-bg);
+}
+
+.consult__bubble {
+  align-self: flex-start;
+  max-width: 80%;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--color-bg);
+  font-size: 14px;
+  line-height: 22px;
+  word-break: keep-all;
+}
+
+.consult__bubble--me {
+  align-self: flex-end;
+  color: var(--consult-on-color);
+  background: var(--consult-color);
+}
+
+.consult__questions {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.consult__questions button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.consult__notice {
+  margin: 0;
+  padding: 0 16px 32px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-text-sub);
+}
+
+.consult__notice a {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.page-inquiry time {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.page-inquiry p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: pre-line;
+}

@@ -19,7 +19,7 @@ function ReviewSection() {
 
   return (
     <section className="review-section section--divided">
-      <SectionTitle title="상품리뷰 코너" align="left" moreLabel="상품리뷰 더보기" />
+      <SectionTitle title="상품리뷰 코너" align="left" moreLabel="상품리뷰 더보기" moreTo="/reviews" />
       <div className="review-section__slider">
         <Swiper slidesPerView={3} spaceBetween={12} onSwiper={setSwiper}>
           {reviews.map(({ product, review }) => (

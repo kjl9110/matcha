@@ -1,0 +1,43 @@
+.story-banner {
+  margin-top: 48px;
+}
+
+/* 원본 사진의 글자와 테두리를 피해 차밭 부분만 확대 */
+.story-banner a {
+  display: block;
+  padding: 40px 24px;
+  color: var(--color-cream);
+  text-decoration: none;
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-forest) 88%, transparent),
+      color-mix(in srgb, var(--color-forest) 35%, transparent)
+    ),
+    url("/images/imgi_15_main_img01.jpg") right -36px top -24px / 1191px 470px no-repeat;
+}
+
+.story-banner__eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.story-banner__title {
+  margin: 12px 0 0;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  white-space: pre-line;
+}
+
+.story-banner__button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--color-cream);
+  font-size: 12px;
+  font-weight: 700;
+}

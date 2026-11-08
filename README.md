@@ -1,16 +1,46 @@
-# React + Vite
+# 대한다원 보성녹차밭 쇼핑몰 시안
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+녹차 쇼핑몰을 가정해 만든 **포트폴리오 프로젝트**입니다. 상품 탐색부터 장바구니, 토스페이먼츠 테스트 결제까지 쇼핑 흐름을 모바일 화면 기준으로 구현했습니다.
 
-Currently, two official plugins are available:
+> 가격, 후기, 사업자 정보 등은 모두 샘플이며 실제 판매 정보가 아닙니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 주요 기능
 
-## React Compiler
+- **상품:** 배너 슬라이드, 카테고리, 검색, 정렬, 상품 27종의 상세페이지
+- **구매:** 장바구니, 찜, 최근 본 상품, 주문서, 토스페이먼츠 테스트 결제
+- **회원:** 가입, 로그인, 아이디·비밀번호 찾기, 마이페이지, 주문 내역
+- **콘텐츠:** 브랜드 이야기, 이벤트, 전체 리뷰, 문의하기, 자동 상담 창, 이용 안내
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 사용 기술
 
-## Expanding the Oxlint configuration
+- React 19, React Router 7, Vite 8
+- Swiper (슬라이드), React Icons (아이콘)
+- 토스페이먼츠 결제 SDK, Vercel 서버 함수 (결제 승인)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 설계에서 신경 쓴 부분
+
+- **결제 금액 검증:** 화면에서 보낸 금액을 믿지 않고, 서버 함수가 상품 데이터로 금액을 다시 계산해 비교합니다. 금액 계산 코드는 `src/utils/order.js` 하나를 화면과 서버가 함께 씁니다.
+- **데이터 분리:** 상품과 상세 설명을 JSON으로 분리해, 상품 27종이 페이지 틀 하나를 함께 씁니다.
+
+## 실행 방법
+
+Node.js가 필요합니다.
+
+```bash
+npm install
+cp .env.example .env.local   # 토스페이먼츠 테스트 키 입력
+npm run dev                  # http://localhost:5173
+```
+
+테스트 키가 없어도 결제를 제외한 화면은 모두 볼 수 있습니다.
+
+## 시안의 한계
+
+서버 없이 동작하도록 만든 부분이 있어, 실서비스에 그대로 쓸 수 없습니다.
+
+| 기능 | 현재 동작 |
+|---|---|
+| 회원, 찜, 문의, 주문 내역 | 브라우저 localStorage에만 저장 (실서비스 보안 수준 아님) |
+| 가입 쿠폰 | 마이페이지에 표시만 하고 결제에는 적용하지 않음 |
+| 카카오·네이버 로그인 | 버튼과 안내 문구만 구현 |
+| 톡톡·카톡 상담 | 정해진 질문에 답하는 시안용 자동 상담 창 |

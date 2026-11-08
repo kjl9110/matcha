@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { IoCheckmarkCircle, IoAlertCircle } from 'react-icons/io5'
 import { useCart } from '../context/useCart.js'
 import { PENDING_ORDER_KEY } from '../utils/order.js'
+import { ORDERS_KEY, prependItem } from '../utils/localStore.js'
 import './Order.css'
 
 function readPending() {
@@ -44,12 +45,13 @@ function PaymentSuccess() {
         if (!response.ok) throw new Error(body.message || '결제 승인에 실패했습니다.')
         sessionStorage.removeItem(PENDING_ORDER_KEY)
         if (pending.fromCart) clearCart()
+        prependItem(ORDERS_KEY, body) // 마이페이지 주문 내역
         setResult(body)
       })
       .catch((err) => {
         setConfirmError(
           err.message === 'Failed to fetch'
-            ? '결제 승인 서버에 연결하지 못했습니다. (npm run dev에서는 api가 동작하지 않습니다)'
+            ? '결제 승인 서버에 연결하지 못했습니다.'
             : err.message,
         )
       })

@@ -1,6 +1,7 @@
 import MainSlider from '../components/MainSlider.jsx'
 import CategoryIcons from '../components/CategoryIcons.jsx'
 import RecommendSection from '../components/RecommendSection.jsx'
+import StoryBanner from '../components/StoryBanner.jsx'
 import CouponBanner from '../components/CouponBanner.jsx'
 import BestProducts from '../components/BestProducts.jsx'
 import VideoProducts from '../components/VideoProducts.jsx'
@@ -13,6 +14,7 @@ function Home() {
     <>
       <MainSlider />
       <CategoryIcons />
+      <StoryBanner />
       <RecommendSection />
       <CouponBanner />
       <BestProducts />
