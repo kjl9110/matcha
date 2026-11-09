@@ -44,7 +44,7 @@
     /* 문구 시작을 왼쪽 배너의 왼쪽 끝에 맞춤 (좁은 화면에서는 16px) */
     padding-left: max(16px, calc(50% - 250px - 40px - 400px));
     line-height: 40px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.2em;
     color: var(--color-bg);
