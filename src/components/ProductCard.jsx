@@ -7,8 +7,8 @@ function ProductCard({ product }) {
 
   return (
     <Link to={`/product/${id}`} className="product-card">
-      <img src={`/${image}`} alt={alt} />
       <ProductBadges product={product} />
+      <img src={`/${image}`} alt={alt} />
       <p className="product-card__title">{title}</p>
       <p className="product-card__price">{salePrice.toLocaleString()}원</p>
       <p className="product-card__tags">{hashtags.join(' ')}</p>

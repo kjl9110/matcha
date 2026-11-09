@@ -11,13 +11,13 @@
   border-radius: 8px;
 }
 
-/* 사진 아래 뱃지 줄 */
+/* 카드 맨 위(사진 위) 뱃지 줄 */
 .product-card .product-badges {
-  margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 .product-card__title {
-  margin: 8px 0 0;
+  margin: 16px 0 0;
   font-size: 12px;
   font-weight: 700;
 }
