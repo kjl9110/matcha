@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <p className="site-bar">보성 차밭에서 온 건강한 한 잔</p>
+      <p className="site-bar"><span>보성 차밭에서 온 건강한 한 잔</span></p>
       <aside className="side-banner">
         <Link to="/product/DH-007">
           <img src="/images/left-banner-nukki.png" alt="100% 보성산 유기농, 보성 차밭의 초록 그대로 유기농 가루녹차" />

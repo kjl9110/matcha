@@ -70,21 +70,17 @@
   color: var(--color-text-muted);
 }
 
-/* 탭이 많아 가로로 넘겨 보기 */
+/* 탭이 많아 양옆으로 넘겨 보기 (Swiper) */
 .all-products__tabs {
-  display: flex;
-  gap: 8px;
+  position: relative;
   margin-top: 24px;
-  overflow-x: auto;
-  scrollbar-width: none;
 }
 
-.all-products__tabs::-webkit-scrollbar {
-  display: none;
+.all-products__tabs .swiper-slide {
+  width: auto;
 }
 
-.all-products__tabs button {
-  flex-shrink: 0;
+.all-products__tabs .swiper-slide button {
   height: 40px;
   padding: 0 20px;
   border: 1px solid var(--color-line);
@@ -99,6 +95,34 @@
 .all-products__tabs .is-active {
   background: var(--color-tab-active);
   border-color: var(--color-tab-active);
+}
+
+/* 양 끝 화살표: 탭 위에 흰 원으로 */
+.all-products__tab-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  background: var(--color-bg);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-text) 12%, transparent);
+  color: var(--color-text);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.all-products__tab-arrow--prev {
+  left: -4px;
+}
+
+.all-products__tab-arrow--next {
+  right: -4px;
 }
 
 .all-products__sort {

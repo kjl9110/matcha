@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import { IoSearch, IoClose } from 'react-icons/io5'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { FreeMode } from 'swiper/modules'
+import { IoSearch, IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5'
+import 'swiper/css'
 import data from '../data/daehandawon_products.json'
 import ProductCard from './ProductCard.jsx'
 import './SectionTitle.css'
@@ -28,6 +31,8 @@ function AllProducts({ initialCategory = '전체', initialQuery = '', autoFocus 
   const [query, setQuery] = useState(initialQuery)
   const [count, setCount] = useState(PAGE_SIZE)
   const [sort, setSort] = useState('default')
+  const [tabSwiper, setTabSwiper] = useState(null)
+  const [tabEdge, setTabEdge] = useState({ start: true, end: false })
 
   const keyword = normalize(query)
   const products = data.products
@@ -72,19 +77,51 @@ function AllProducts({ initialCategory = '전체', initialQuery = '', autoFocus 
           )}
         </div>
       </div>
-      <div className="all-products__tabs" role="tablist">
-        {categories.map((name) => (
+      {/* 카테고리 탭: 마우스로 끌거나 양옆 화살표로 넘김 */}
+      <div className="all-products__tabs">
+        <Swiper
+          modules={[FreeMode]}
+          slidesPerView="auto"
+          spaceBetween={8}
+          freeMode
+          onSwiper={setTabSwiper}
+          onProgress={(swiper) => setTabEdge({ start: swiper.isBeginning, end: swiper.isEnd })}
+          role="tablist"
+        >
+          {categories.map((name) => (
+            <SwiperSlide key={name}>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={name === category}
+                className={name === category ? 'is-active' : ''}
+                onClick={() => selectCategory(name)}
+              >
+                {name}
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {!tabEdge.start && (
           <button
-            key={name}
             type="button"
-            role="tab"
-            aria-selected={name === category}
-            className={name === category ? 'is-active' : ''}
-            onClick={() => selectCategory(name)}
+            className="all-products__tab-arrow all-products__tab-arrow--prev"
+            aria-label="이전 카테고리"
+            onClick={() => tabSwiper?.slidePrev()}
           >
-            {name}
+            <IoChevronBack />
           </button>
-        ))}
+        )}
+        {!tabEdge.end && (
+          <button
+            type="button"
+            className="all-products__tab-arrow all-products__tab-arrow--next"
+            aria-label="다음 카테고리"
+            onClick={() => tabSwiper?.slideNext()}
+          >
+            <IoChevronForward />
+          </button>
+        )}
       </div>
       <div className="all-products__sort">
         <select
