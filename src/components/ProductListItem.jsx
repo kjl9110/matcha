@@ -36,10 +36,10 @@ function ProductListItem({ product }) {
       </Link>
       <div className="product-item__info">
         <Link to={`/product/${id}`} className="product-item__link">
+          <ProductBadges product={product} />
           <p className="product-item__title">{title}</p>
           <p className="product-item__price">{salePrice.toLocaleString()}원</p>
           <p className="product-item__tags">{hashtags.join(' ')}</p>
-          <ProductBadges product={product} />
         </Link>
         <div className="product-item__actions">
           <button

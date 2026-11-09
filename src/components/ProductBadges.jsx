@@ -1,10 +1,9 @@
 import './ProductBadges.css'
 
 // 인기상품 = badge가 BEST, 무료배송 = 배송비 0원
+// 상품명 위에 두므로, 뱃지가 없어도 같은 높이를 비워 카드끼리 줄을 맞춤
 function ProductBadges({ product }) {
   const { badge, shippingFee } = product
-
-  if (badge !== 'BEST' && shippingFee !== 0) return null
 
   return (
     <div className="product-badges">
