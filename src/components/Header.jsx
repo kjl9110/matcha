@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { IoPersonOutline, IoCartOutline, IoSearch } from 'react-icons/io5'
+import { IoPersonOutline, IoCartOutline, IoSearchOutline } from 'react-icons/io5'
 import CartLink from './CartLink.jsx'
 import './Header.css'
 
@@ -22,7 +22,7 @@ function Header() {
           </button>
           <CartLink icon={<IoCartOutline />} />
           <button type="button" aria-label="검색" onClick={() => navigate('/products?search=1')}>
-            <IoSearch />
+            <IoSearchOutline />
           </button>
         </div>
       </header>

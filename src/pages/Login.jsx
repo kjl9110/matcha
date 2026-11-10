@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { IoEyeOutline, IoEyeOffOutline } from 'react-icons/io5'
+import { RiKakaoTalkFill } from 'react-icons/ri'
+import { SiNaver } from 'react-icons/si'
+import { FcGoogle } from 'react-icons/fc'
 import { useAuth } from '../context/useAuth.js'
+import { SOCIAL_PROVIDERS, startSocialLogin } from '../utils/socialLogin.js'
 import './Login.css'
 
 const EXTRA_LINKS = [
@@ -9,12 +13,12 @@ const EXTRA_LINKS = [
   { label: '비밀번호 찾기', to: '/find-account?type=password' },
   { label: '회원가입', to: '/signup' },
 ]
-// 카카오·네이버 로그인은 각 회사의 앱 키와 서버가 있어야 연결 가능
+// 간편 로그인 (키는 .env.local · Vercel 환경변수에 등록)
 const SOCIAL_LOGINS = [
-  { label: '카카오로 계속하기', className: 'login__social--kakao' },
-  { label: '네이버로 계속하기', className: 'login__social--naver' },
+  { provider: 'kakao', label: '카카오로 계속하기', Icon: RiKakaoTalkFill },
+  { provider: 'naver', label: '네이버로 계속하기', Icon: SiNaver },
+  { provider: 'google', label: '구글로 계속하기', Icon: FcGoogle },
 ]
-const SOCIAL_NOTICE = '간편 로그인은 카카오·네이버 앱 등록 후 연결할 수 있어요.'
 
 function Login() {
   const navigate = useNavigate()
@@ -28,9 +32,14 @@ function Login() {
 
   if (user && !submitting) return <Navigate to="/mypage" replace />
 
-  const showSocialNotice = () => {
+  const handleSocial = async (provider) => {
     setErrors({})
-    setNotice(SOCIAL_NOTICE)
+    setNotice(`${SOCIAL_PROVIDERS[provider].label} 로그인 화면으로 이동하는 중…`)
+    try {
+      await startSocialLogin(provider)
+    } catch (err) {
+      setNotice(err.message)
+    }
   }
 
   const handleSubmit = async (event) => {
@@ -119,13 +128,14 @@ function Login() {
         <p className="login__divider"><span>간편 로그인</span></p>
 
         <div className="login__socials">
-          {SOCIAL_LOGINS.map(({ label, className }) => (
+          {SOCIAL_LOGINS.map(({ provider, label, Icon }) => (
             <button
-              key={label}
+              key={provider}
               type="button"
-              className={`login__social ${className}`}
-              onClick={showSocialNotice}
+              className={`login__social login__social--${provider}`}
+              onClick={() => handleSocial(provider)}
             >
+              <Icon aria-hidden="true" />
               {label}
             </button>
           ))}

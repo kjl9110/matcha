@@ -6,6 +6,8 @@ import { ORDERS_KEY, readList } from '../utils/localStore.js'
 import './Order.css'
 import './Pages.css'
 
+const PROVIDER_LABELS = { kakao: '카카오', naver: '네이버', google: '구글' }
+
 const MENU = [
   { label: '장바구니', to: '/cart' },
   { label: '찜한 상품', to: '/wishlist' },
@@ -29,7 +31,10 @@ function MyPage() {
   return (
     <section className="order-page">
       <h2 className="order-page__title">{user.name}님, 반갑습니다</h2>
-      <p className="page-sub">{user.userId} · {user.email}</p>
+      <p className="page-sub">
+        {user.provider ? `${PROVIDER_LABELS[user.provider]} 계정` : user.userId}
+        {user.email && ` · ${user.email}`}
+      </p>
 
       <div className="page-coupon">
         <strong>회원 가입 쿠폰 2,000원</strong>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { readList, writeList } from '../utils/localStore.js'
 import { AuthContext } from './authContext.js'
 
@@ -58,6 +58,17 @@ export function AuthProvider({ children }) {
     setSessionId(userId)
   }
 
+  // 카카오·네이버·구글: 서버가 확인한 프로필로 회원을 만들거나 정보를 갱신하고 로그인
+  const socialLogin = useCallback(({ provider, id, name, email }) => {
+    const userId = `${provider}_${id}`
+    setUsers((prev) => {
+      const found = prev.find((item) => item.userId === userId)
+      if (found) return prev.map((item) => (item === found ? { ...item, name, email } : item))
+      return [...prev, { userId, name, email, provider, joinedAt: new Date().toISOString() }]
+    })
+    setSessionId(userId)
+  }, [])
+
   const logout = () => setSessionId(null)
 
   const findId = (name, email) =>
@@ -71,7 +82,7 @@ export function AuthProvider({ children }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, signup, login, logout, findId, resetPassword }}>
+    <AuthContext.Provider value={{ user, signup, login, socialLogin, logout, findId, resetPassword }}>
       {children}
     </AuthContext.Provider>
   )

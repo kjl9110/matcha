@@ -12,6 +12,7 @@ import Checkout from './pages/Checkout.jsx'
 import PaymentSuccess from './pages/PaymentSuccess.jsx'
 import PaymentFail from './pages/PaymentFail.jsx'
 import Login from './pages/Login.jsx'
+import AuthCallback from './pages/AuthCallback.jsx'
 import Signup from './pages/Signup.jsx'
 import FindAccount from './pages/FindAccount.jsx'
 import MyPage from './pages/MyPage.jsx'
@@ -58,6 +59,7 @@ function App() {
             <Route path="/payment/success" element={<PaymentSuccess />} />
             <Route path="/payment/fail" element={<PaymentFail />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/auth/:provider" element={<AuthCallback />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/find-account" element={<FindAccount />} />
             <Route path="/mypage" element={<MyPage />} />

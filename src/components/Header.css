@@ -38,14 +38,26 @@
 
 .header__actions {
   display: flex;
+  align-items: center;
+  gap: 4px;
   justify-self: end;
 }
 
-.header__bar button {
-  padding: 4px;
+/* 마이페이지·장바구니·검색: 같은 32px 상자 정중앙에 같은 크기(24px)로 */
+.header__actions button,
+.header__actions .cart-link {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
   border: 0;
   background: none;
   color: var(--color-text);
   font-size: 24px;
   cursor: pointer;
+}
+
+.header__actions svg {
+  display: block;
 }
