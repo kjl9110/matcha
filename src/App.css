@@ -71,7 +71,7 @@
   .side-banner {
     display: block;
     position: fixed;
-    top: 80px;
+    top: 160px;
     /* 가운데 500px 화면 왼쪽에서 40px 떨어지게 (오른쪽 버튼과 대칭) */
     right: calc(50% + 250px + 40px);
     width: var(--side-banner-width);
