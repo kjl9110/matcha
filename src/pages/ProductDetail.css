@@ -127,7 +127,7 @@
 .detail__tags {
   margin: 16px 0 0;
   font-size: 12px;
-  color: var(--color-text-muted);
+  color: var(--color-olive);
 }
 
 .detail__order {

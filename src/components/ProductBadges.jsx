@@ -7,8 +7,8 @@ function ProductBadges({ product }) {
 
   return (
     <div className="product-badges">
-      {badge === 'BEST' && <span className="badge badge--pink">인기상품♬</span>}
-      {shippingFee === 0 && <span className="badge badge--purple">무료배송♬</span>}
+      {badge === 'BEST' && <span className="badge badge--best">인기상품♬</span>}
+      {shippingFee === 0 && <span className="badge badge--free">무료배송♬</span>}
     </div>
   )
 }

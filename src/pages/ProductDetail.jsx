@@ -55,7 +55,7 @@ function DetailContent({ product }) {
   const { isWished, toggleWish } = useWishlist()
   const wished = isWished(product.id)
   const [quantity, setQuantity] = useState(1)
-  const [added, setAdded] = useState(false)
+  const [notice, setNotice] = useState(null)
 
   // 최근 본 상품에 기록
   useEffect(() => {
@@ -64,7 +64,16 @@ function DetailContent({ product }) {
 
   const addToCart = () => {
     addItem(product.id, quantity)
-    setAdded(true)
+    setNotice({ text: '장바구니에 담았습니다.', to: '/cart', linkText: '장바구니 보기' })
+  }
+
+  const toggleWishWithNotice = () => {
+    toggleWish(product.id)
+    setNotice({
+      text: wished ? '찜을 해제했습니다.' : '찜 목록에 담았습니다.',
+      to: '/wishlist',
+      linkText: '찜 목록 보기',
+    })
   }
 
   // 구매하기: 장바구니를 거치지 않고 이 상품만 바로 주문
@@ -167,16 +176,16 @@ function DetailContent({ product }) {
               className={`detail__wish ${wished ? 'is-wished' : ''}`}
               aria-label={`${title} 찜하기`}
               aria-pressed={wished}
-              onClick={() => toggleWish(product.id)}
+              onClick={toggleWishWithNotice}
             >
               {wished ? <IoHeart /> : <IoHeartOutline />}
             </button>
             <button type="button" className="detail__cart" onClick={addToCart}>장바구니</button>
             <button type="button" className="detail__buy" onClick={buyNow}>구매하기</button>
           </div>
-          {added && (
+          {notice && (
             <p className="detail__added" role="status">
-              장바구니에 담았습니다. <Link to="/cart">장바구니 보기</Link>
+              {notice.text} <Link to={notice.to}>{notice.linkText}</Link>
             </p>
           )}
         </div>

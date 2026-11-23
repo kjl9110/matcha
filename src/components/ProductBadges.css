@@ -7,15 +7,20 @@
 
 .badge {
   padding: 0 4px;
-  border: 1px solid var(--color-line);
+  border: 1px solid;
   font-size: 12px;
   line-height: 18px;
 }
 
-.badge--pink {
-  color: var(--color-badge-pink);
+/* 인기상품: 빨강으로 꽉 채움 */
+.badge--best {
+  border-color: var(--color-sale);
+  color: var(--color-bg);
+  background: var(--color-sale);
 }
 
-.badge--purple {
-  color: var(--color-badge-purple);
+/* 무료배송: 진초록 테두리 */
+.badge--free {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
 }
